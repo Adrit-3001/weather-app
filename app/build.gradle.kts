@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.myapplication"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.myapplication"
@@ -18,6 +18,7 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+        buildConfigField("String", "OPEN_WEATHER_MAP_API_KEY", "\"4ca602083748b203b642802697a476c5\"")
     }
 
     buildTypes {
@@ -35,6 +36,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.3"

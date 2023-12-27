@@ -11,5 +11,11 @@
         android:text="Hello, Weather App!"
         android:layout_centerInParent="true"
         android:textSize="20sp" />
+    <Button
+        android:id="@+id/selectLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Location"
+        android:layout_marginTop="16dp"    />
 
 </RelativeLayout>
