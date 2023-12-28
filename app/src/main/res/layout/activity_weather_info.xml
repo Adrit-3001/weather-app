@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".activities.WeatherInfoActivity">
@@ -21,7 +22,45 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Weather: Loading..."
-        android:textSize="16sp"/>
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weatherTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Temperature: "
+        android:textSize="20sp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/sunriseTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/temperatureTextView"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="Sunrise: "-->
+<!--        android:textSize="16sp" />-->
+
+    <TextView
+        android:id="@+id/hourlyTemperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperatureTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Hourly Temperature: "
+        android:textSize="26sp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
     <!-- Add more TextViews or UI elements for additional weather information -->
 </LinearLayout>
