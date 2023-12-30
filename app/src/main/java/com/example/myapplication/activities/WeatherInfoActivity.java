@@ -142,6 +142,7 @@ public class WeatherInfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather_info);
 
+
         // Retrieve the selected location from the Intent
         String selectedLocation = getIntent().getStringExtra("selectedLocation");
 

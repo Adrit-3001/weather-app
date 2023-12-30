@@ -1,21 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activities.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello, Weather App!"
-        android:layout_centerInParent="true"
-        android:textSize="20sp" />
+    <!-- VideoView for the first video -->
+    <VideoView
+        android:id="@+id/videoView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- VideoView for the second video -->
+    <VideoView
+        android:id="@+id/videoView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- VideoView for the third video -->
+    <VideoView
+        android:id="@+id/videoView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Button centered below the videos -->
     <Button
         android:id="@+id/selectLocationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Select Location"
-        android:layout_marginTop="16dp"    />
+        android:layout_gravity="center_horizontal" />
 
-</RelativeLayout>
+    <!-- Your other UI elements go here -->
+
+</LinearLayout>
+
+
+
+
+
+
+
