@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+// has
         // Initialize VideoViews
         videoView1 = findViewById(R.id.videoView1);
         videoView2 = findViewById(R.id.videoView2);
